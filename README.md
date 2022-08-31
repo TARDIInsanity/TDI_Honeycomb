@@ -1,5 +1,7 @@
 # TDI_Honeycomb
 pythonic (COMBinator) lambda calculus esolang in python  
+
+This will not work outside of an IDE. There is no main, the best I can offer is the function "ipr" which takes a path and a dictionary and interprets the code in the file at that path.
   
 In the file "suki_02_lexer.py":  
 > This file depends on (https://github.com/TARDIInsanity/TDI_parse_integer : guaranteed to work with v2.3) to lex tokens  
