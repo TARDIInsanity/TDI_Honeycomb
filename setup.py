@@ -12,7 +12,7 @@ __version__ = "2"
 setup(
       name = "TDI_Honeycomb",
       version = __version__,
-      
+      install_requires = ["TDI_parse_integer"],
       url = "https://github.com/TARDIInsanity/TDI_Honeycomb",
       author = "TARDIInsanity",
       
