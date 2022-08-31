@@ -5,29 +5,8 @@ Created on Sun Aug 21 21:30:26 2022
 @author: github.com/TARDIInsanity
 """
 
-################
-import importlib
-def get_package(name, folder):
-    path = folder + name + ".py"
-    spec = importlib.util.spec_from_file_location(name, path)
-    py = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(py)
-    return py
-
-lex_integer_2 = get_package("lex_integer_2", "C:\\Users\\Ryan\\Documents\\Code_2021\\Pseudo\\Types\\Args\\")
-for m in [lex_integer_2]:
-    sorted_set = m.sorted_set
-    sorted_dict = m.sorted_dict
-    pull_ide = m.pull_ide
-    IntPuller = m.IntPuller(single_seps="_")
-    pull_string = m.pull_string
-    pyth_escape = m.pyth_escape
-del m
-
-del get_package
-del importlib
-################
 from weakref import WeakValueDictionary
+import TDI_parse_integer as lex_integer_2 # https://github.com/TARDIInsanity/TDI_parse_integer
 
 class Token:
     __slots__ = ("val", "__weakref__")
